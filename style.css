@@ -1,22 +1,66 @@
 body{
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
-.teclado{
+.urna{
     background-color: #dbd5c9;
     padding: 30px;
-    /* display: flex; */
+    display: flex; 
 }
 .tela{
-    width: 450px;
+    width: 500px;
     height: 320px;
-    background: linear-gradient(to right, yellow, red);
+    background: linear-gradient(to right, red, yellow);
+    border: 2px solid;
 }
-.urna{
-    background-color: #403a3a ;
+.teclado{
+    margin-left: 30px;
+    background-color: #403a3aa1 ;
 }
+.teclado--linha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* alinha os botão tomando como base o fim da linha */
+    
+}
+.teclado--botao{
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555 ;
+}
+.botao--branco{
+    background-color: white;
+    color: #000;
+    font-size: 15px;
+    
+}
+.botao--corrige{
+    background-color: #f09046;
+    color: black;
+    font-size: 15px;
+}
+.botao--confirmar{
+    background-color: #48c079;
+    color: black;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+    
 
+}
 
 
 
